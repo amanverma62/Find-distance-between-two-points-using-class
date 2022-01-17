@@ -1,0 +1,37 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+class point{
+
+    int x1,x2,y1,y2;
+
+    public:
+    void getNumbersFromUser(){
+        cout<<"enter the x1 number"<<endl;
+        cin>>x1;
+        cout<<"enter the y1 number"<<endl;
+        cin>>y1;
+        cout<<"enter the x2 number"<<endl;
+        cin>>x2;
+        cout<<"enter the y2 number"<<endl;
+        cin>>y2;
+    }
+
+    void formula(){
+        double distance;
+
+        distance= sqrt(pow((x2-x1),2) + pow((y2-y1),2));
+          cout<<"the distance between two point is "<<distance<<endl;
+    }
+
+     
+    
+};
+int main(){
+
+    point d;
+    d.getNumbersFromUser();
+    d.formula();
+
+return 0;
+}
